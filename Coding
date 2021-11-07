@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class OneB {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); 
+		
+      	System.out.print("Enter yearly interest rate : ");
+      	double rate = scan.nextDouble(); 
+      	System.out.print("Enter number of years as an integer : ");
+      	int years = scan.nextInt();
+      	System.out.print("Enter loan amount : $");
+      	double loan = scan.nextDouble(); 
+      	
+      	double month = loan*rate/100;
+		double total = (years*12) * 3.5 /100 * loan;
+		
+		System.out.printf("The monthly payment is $%.2f%n" , month);
+		 System.out.printf("The total payment is $%.2f%n" , total);
+		}
+
+
+}
